@@ -20,11 +20,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <h2><%= @post.created_at.strftime("%B %d, %Y") %></h2>
+            <h2><strong><%= @post.created_at.strftime("%B %d, %Y") %></strong></h2>
             </br>
             <p><%= @post.content %><p>
+            </br>
             <%=link_to :back do%>
-            <button>Back to Post Index</button>
+            <button class='btn-sm'>Back to Post Index</button>
             <%end%>
           </div>
         </div>
