@@ -39,7 +39,7 @@
                 <%= post.title %>
               </h2>
               <h3 class="post-subtitle">
-                <%= post.content %>
+                <%=truncate(post.content, length: 60, separator:' ')%> 
               </h3>
           <%end%>
             <p class="post-meta">Posted by
